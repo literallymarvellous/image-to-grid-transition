@@ -101,11 +101,23 @@ main {
   height: 100%;
 }
 
+/* Utilities */
+.block {
+  display: block;
+}
+
+.grid--open {
+  display: grid;
+}
+
+.nodisplay {
+  display: none;
+}
+
 /* Home Layout */
 
 .home {
   height: 100%;
-  // display: none;
 
   &__item {
     position: relative;
@@ -273,7 +285,8 @@ main {
 .grid__conatiner {
   position: relative;
   height: 100vh;
-  display: grid;
+  // display: grid;
+  display: none;
   place-items: center;
   background: $light-gray;
 
@@ -284,7 +297,6 @@ main {
     display: grid;
     grid-template-columns: repeat(100, 1fr);
     grid-template-rows: repeat(100, 1fr);
-    display: none;
 
     .grid__name {
       position: absolute;
